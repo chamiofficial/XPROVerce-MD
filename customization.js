@@ -116,24 +116,24 @@ ${config.BOTNAME || "> [⚡ 𝗖𝗛𝗔𝗠𝗜 〽ᴅ ⚡]"}
     > ======================`.trim();
   },
   //====================movie======================================
-  GROUP: function (groupName, config,oce) {
+  GROUP: function (groupName, config) {
     return `
-> 🛡️ *𝘼𝙙𝙢𝙞𝙣:* ⚡ CHAMIYA ⚡`.trim();
+\n> 🛡️ *𝘼𝙙𝙢𝙞𝙣:* ⚡ CHAMIYA ⚡`.trim();
   },
-  SINHALASUB: function (movieData,oce) {
+  SINHALASUB: function (movieData) {
     return `
     
-☘️ *𝗧ɪᴛʟᴇ : _${oce}${movieData.title}${oce}_*
+☘️ *𝗧ɪᴛʟᴇ : _${movieData.title}_*
 
-▫️📝 *Tagline ➟* _${oce}${movieData.metadata.tagline || "N/A"}${oce}_
-▫️🥇 *𝗜ᴍᴅʙ 𝗩ᴏᴛᴇꜱ ➟* _${oce}${movieData.metadata.imdbRating || "N/A"}${oce}_
-▫️📅 *𝗥ᴇʟᴇᴀꜱᴇ 𝗬ᴇᴀʀ ➟* _${oce}${movieData.metadata.year}${oce}_
-▫️🌎 *𝗖ᴏᴜɴᴛʀʏ ➟* _${oce}${movieData.metadata.country}${oce}_
-▫️🎭 *𝗚ᴇɴʀᴇꜱ ➟* _${oce}${movieData.metadata.genres.join(", ")}${oce}_
-▫️⏳ *𝗗ᴜʀᴀᴛɪᴏɴ ➟* _${oce}${movieData.metadata.duration}${oce}_
-▫️🔠 *𝗟ᴀɴɢᴜᴀɢᴇ ➟* _${oce}${movieData.metadata.language}${oce}_
-▫️👨‍💻 *𝗦ᴜʙᴛɪᴛʟᴇ 𝗕ʏ ➟* _${oce}${movieData.metadata.subtitleAuthor}${oce}_
-▫️🌐 *𝗦ᴜʙᴛɪᴛʟᴇ 𝗦ɪᴛᴇ ➟* _${oce}${movieData.metadata.subtitleSite}${oce}_
+▫️📝 *Tagline ➟* _${movieData.metadata.tagline || "N/A"}_
+▫️🥇 *𝗜ᴍᴅʙ 𝗩ᴏᴛᴇꜱ ➟* _${movieData.metadata.imdbRating || "N/A"}_
+▫️📅 *𝗥ᴇʟᴇᴀꜱᴇ 𝗬ᴇᴀʀ ➟* _${movieData.metadata.year}_
+▫️🌎 *𝗖ᴏᴜɴᴛʀʏ ➟* _${movieData.metadata.country}_
+▫️🎭 *𝗚ᴇɴʀᴇꜱ ➟* _${movieData.metadata.genres.join(", ")}_
+▫️⏳ *𝗗ᴜʀᴀᴛɪᴏɴ ➟* _${movieData.metadata.duration}_
+▫️🔠 *𝗟ᴀɴɢᴜᴀɢᴇ ➟* _${movieData.metadata.language}_
+▫️👨‍💻 *𝗦ᴜʙᴛɪᴛʟᴇ 𝗕ʏ ➟* _${movieData.metadata.subtitleAuthor}_
+▫️🌐 *𝗦ᴜʙᴛɪᴛʟᴇ 𝗦ɪᴛᴇ ➟* _${movieData.metadata.subtitleSite}_
 
 *➟➟➟➟➟➟➟➟➟➟➟➟➟➟➟*
 
@@ -142,22 +142,22 @@ ${config.BOTNAME || "> [⚡ 𝗖𝗛𝗔𝗠𝗜 〽ᴅ ⚡]"}
 *➟➟➟➟➟➟➟➟➟➟➟➟➟➟➟*
 
 ▫️📌 *𝗗ᴇꜱᴄʀɪᴘᴛɪᴏɴ ➟*  
-> ${oce}_${movieData.description}_${oce}`.trim();
+_${movieData.description}_`.trim();
   },
-  CINESUBZ: function (title, metadata, rating,tagline,genres,quality,description,oce) {
+  CINESUBZ: function (title, metadata, rating,tagline,genres,quality,description) {
     return `
     
-☘️ *𝗧ɪᴛʟᴇ :* _${oce}${title}${oce}_
+☘️ *𝗧ɪᴛʟᴇ : _${title}_*
 
-▫️📝 *Tagline ➟* _${oce}${tagline || "N/A"}${oce}_
-▫️🥇 *𝗜ᴍᴅʙ 𝗩ᴏᴛᴇꜱ ➟* _${oce}${typeof rating === 'object' ? rating.value : rating}${oce}_
-▫️📅 *𝗥ᴇʟᴇᴀꜱᴇ 𝗬ᴇᴀʀ ➟* _${oce}${metadata?.year || "N/A"}${oce}_
-▫️🌎 *𝗖ᴏᴜɴᴛʀʏ ➟* _${oce}${metadata?.country || "N/A"}${oce}_
-▫️🎭 *𝗚ᴇɴʀᴇꜱ ➟* _${oce}${genres}${oce}_
-▫️⏳ *𝗗ᴜʀᴀᴛɪᴏɴ ➟* _${oce}${metadata?.runtime || metadata?.duration || "N/A"}${oce}_
-▫️🔠 *𝗟ᴀɴɢᴜᴀɢᴇ ➟* _${oce}${metadata?.language || "English"}${oce}_
-▫️👨‍💻 *𝗦ᴜʙᴛɪᴛʟᴇ 𝗕ʏ ➟* _${oce}${metadata?.subtitleBy || "N/A"}${oce}_
-▫️📊 *𝗤ᴜᴀʟɪᴛʏ ➟* _${oce}${quality}${oce}_
+▫️📝 *Tagline ➟* _${tagline || "N/A"}_
+▫️🥇 *𝗜ᴍᴅʙ 𝗩ᴏᴛᴇꜱ ➟* _${typeof rating === 'object' ? rating.value : rating}_
+▫️📅 *𝗥ᴇʟᴇᴀꜱᴇ 𝗬ᴇᴀʀ ➟* _${metadata?.year || "N/A"}_
+▫️🌎 *𝗖ᴏᴜɴᴛʀʏ ➟* _${metadata?.country || "N/A"}_
+▫️🎭 *𝗚ᴇɴʀᴇꜱ ➟* _${genres}_
+▫️⏳ *𝗗ᴜʀᴀᴛɪᴏɴ ➟* _${metadata?.runtime || metadata?.duration || "N/A"}_
+▫️🔠 *𝗟ᴀɴɢᴜᴀɢᴇ ➟* _${metadata?.language || "English"}_
+▫️👨‍💻 *𝗦ᴜʙᴛɪᴛʟᴇ 𝗕ʏ ➟* _${metadata?.subtitleBy || "N/A"}_
+▫️📊 *𝗤ᴜᴀʟɪᴛʏ ➟* _${quality}_
 
 *➟➟➟➟➟➟➟➟➟➟➟➟➟➟➟*
 
@@ -166,35 +166,35 @@ ${config.BOTNAME || "> [⚡ 𝗖𝗛𝗔𝗠𝗜 〽ᴅ ⚡]"}
 *➟➟➟➟➟➟➟➟➟➟➟➟➟➟➟*
 
 ▫️📌 *𝗗ᴇꜱᴄʀɪᴘᴛɪᴏɴ ➟*  
-> ${oce}_${description || "No description available."}_${oce} `.trim();
+ _${description || "No description available."}_`.trim();
   },
-  CINETVSHOW: function (episodeInfo,quality,oce) {
+  CINETVSHOW: function (episodeInfo,quality) {
     return `
-> *『 𝙿𝙸𝙽𝙺 𝙻𝙾𝚃𝚄𝚂 𝙲𝙸𝙽𝙴𝙼𝙰 』*
-> =====================
-> 📺 *Series:* ${oce}${episodeInfo.series || "N/A"}${oce}
-> 🎬 *Episode:* ${oce}${episodeInfo.seasonEpisode || "N/A"}${oce}
-> 🏷️ *Title:* ${oce}${episodeInfo.episodeTitle || "N/A"}${oce}
-> 📅 *Date:* ${oce}${episodeInfo.date || "N/A"}${oce}
-> ⭐ *Rating:* ${oce}${episodeInfo.rating?.value || "N/A"}/10${oce}
-> 📊 *Quality:* ${oce}${quality || "480p"}${oce}
-> =====================
-> 📌 *Episode Info:*
-> ${oce}_${episodeInfo.title || "No additional information available."}_${oce}`.trim();
+*『 𝙿𝙸𝙽𝙺 𝙻𝙾𝚃𝚄𝚂 𝙲𝙸𝙽𝙴𝙼𝙰 』*
+=====================
+📺 *Series:* ${episodeInfo.series || "N/A"}
+🎬 *Episode:* ${episodeInfo.seasonEpisode || "N/A"}
+🏷️ *Title:* ${episodeInfo.episodeTitle || "N/A"}
+📅 *Date:* ${episodeInfo.date || "N/A"}
+⭐ *Rating:* ${episodeInfo.rating?.value || "N/A"}/10
+📊 *Quality:* ${quality || "480p"}
+=====================
+📌 *Episode Info:*
+_${episodeInfo.title || "No additional information available."}_`.trim();
   },
-  CINETVSHOWALLDL: function (seriesTitle,rating,metadata,genres,movieData,oce) {
+  CINETVSHOWALLDL: function (seriesTitle,rating,metadata,genres,movieData) {
     return `
-> *『⚡ 𝙿𝙸𝙽𝙺 𝙻𝙾𝚃𝚄𝚂 𝙲𝙸𝙽𝙴𝙼𝙰 』*
-> =====================
-> 🎬 *Series:* ${oce}${seriesTitle}${oce}
-> ⭐ *IMDb:* ${oce}${rating}${oce}
-> 🗓️ *Year:* ${oce}${metadata.year || "N/A"}${oce}
-> 🎭 *Genres:* ${oce}${genres}${oce}
-> 📊 *Seasons:* ${oce}${movieData.seasons.length}${oce}
-> 🌐 *Language:* ${oce}${metadata.language || "English"}${oce}
-> =====================
-> 📌 *Series Description:*  
-> ${oce}_${movieData.description || "No description available."}_${oce}`.trim();
+*『⚡ 𝙿𝙸𝙽𝙺 𝙻𝙾𝚃𝚄𝚂 𝙲𝙸𝙽𝙴𝙼𝙰 』*
+=====================
+🎬 *Series:* ${seriesTitle}
+⭐ *IMDb:* ${rating}
+🗓️ *Year:* ${metadata.year || "N/A"}
+🎭 *Genres:* ${genres}
+📊 *Seasons:* ${movieData.seasons.length}
+🌐 *Language:* ${metadata.language || "English"}
+=====================
+📌 *Series Description:*  
+_${movieData.description || "No description available."}_`.trim();
   },
   //=====================youtube===========================================
   SONG: function (data,pushname,oce) {

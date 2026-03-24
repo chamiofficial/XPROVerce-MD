@@ -117,8 +117,7 @@ ${config.BOTNAME || "> [⚡ 𝗖𝗛𝗔𝗠𝗜 〽ᴅ ⚡]"}
   },
   //====================movie======================================
   GROUP: function (groupName, config) {
-    return `
-\n> 🛡️ *𝘼𝙙𝙢𝙞𝙣:* ⚡ CHAMIYA ⚡`.trim();
+    return ``.trim();
   },
   SINHALASUB: function (movieData) {
     return `
@@ -141,10 +140,9 @@ ${config.BOTNAME || "> [⚡ 𝗖𝗛𝗔𝗠𝗜 〽ᴅ ⚡]"}
 
 *➟➟➟➟➟➟➟➟➟➟➟➟➟➟➟*
 
-▫️📌 *𝗗ᴇꜱᴄʀɪᴘᴛɪᴏɴ ➟*  
-_${movieData.description}_`.trim();
+`.trim();
   },
-  CINESUBZ: function (title, metadata, rating,tagline,genres,quality,description) {
+  CINESUBZ: function (title, metadata, rating,tagline,genres,quality) {
     return `
     
 ☘️ *𝗧ɪᴛʟᴇ : _${title}_*
@@ -165,8 +163,7 @@ _${movieData.description}_`.trim();
 
 *➟➟➟➟➟➟➟➟➟➟➟➟➟➟➟*
 
-▫️📌 *𝗗ᴇꜱᴄʀɪᴘᴛɪᴏɴ ➟*  
- _${description || "No description available."}_`.trim();
+`.trim();
   },
   CINETVSHOW: function (episodeInfo,quality) {
     return `

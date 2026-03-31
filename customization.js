@@ -181,15 +181,19 @@ _${episodeInfo.title || "No additional information available."}_`.trim();
   },
   CINETVSHOWALLDL: function (seriesTitle,rating,metadata,genres,movieData) {
     return `
-*『⚡ 𝙿𝙸𝙽𝙺 𝙻𝙾𝚃𝚄𝚂 𝙲𝙸𝙽𝙴𝙼𝙰 』*
+*📺 𝙿𝙸𝙽𝙺 𝙻𝙾𝚃𝚄𝚂 𝚃𝚅 𝚂𝙷𝙾𝚆 📺*
+
 =====================
-🎬 *Series:* ${seriesTitle}
-⭐ *IMDb:* ${rating}
-🗓️ *Year:* ${metadata.year || "N/A"}
-🎭 *Genres:* ${genres}
-📊 *Seasons:* ${movieData.seasons.length}
-🌐 *Language:* ${metadata.language || "English"}
+
+🎬 *𝗦ᴇʀɪᴇꜱ:* ${seriesTitle}
+⭐ *𝗜ᴍᴅʙ:* ${rating}
+🗓️ *𝗥ᴇʟᴇᴀꜱ 𝗬ᴇᴀʀ:* ${metadata.year || "N/A"}
+🎭 *𝗚ᴇɴʀᴇꜱ:* ${genres}
+📊 *𝗦ᴇᴀꜱᴏɴꜱ:* ${movieData.seasons.length}
+🌐 *𝗟ᴀɴɢᴜᴀɢᴇ:* ${metadata.language || "English"}
+
 =====================
+
 📌 *Series Description:*  
 _${movieData.description || "No description available."}_`.trim();
   },

@@ -5,7 +5,7 @@ module.exports = {
   //====================menu=================================
   MENUMSG: function (pushname, config) {
     return `
-> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]
+> [⚡ 𝗖𝗛𝗔𝗠𝗜 〽ᴅ ⚡]
 > 𝙷𝚎𝚕𝚕𝚘 𝚃𝚑𝚎𝚛𝚎 *${pushname}*
 > ==========================
 > ♠ 𝙾𝚠𝚗𝚎𝚛  : ${config.OWNER_NAME}
@@ -15,7 +15,7 @@ module.exports = {
   //======================download============================
   TIKTOK: function (datas,pushname, q) {
     return `
-> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]
+> [⚡ 𝗖𝗛𝗔𝗠𝗜 〽ᴅ ⚡]
 > 𝙷𝚎𝚕𝚕𝚘 𝚃𝚑𝚎𝚛𝚎 *${pushname}*
 > [ T I K T O K  D L ]
 > ========================
@@ -26,7 +26,7 @@ module.exports = {
   },
   FACEBOOK: function (title,pushname, q) {
     return `
-> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]
+> [⚡ 𝗖𝗛𝗔𝗠𝗜 〽ᴅ ⚡]
 > 𝙷𝚎𝚕𝚕𝚘 𝚃𝚑𝚎𝚛𝚎 *${pushname}*
 > [ F A C E B O O K  D L ]
 > =======================
@@ -36,7 +36,7 @@ module.exports = {
   },
   TWITTER: function (videoDescription, videoTitle,pushname) {
     return `
-${config.BOTNAME || "> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}
+${config.BOTNAME || "> [⚡ 𝗖𝗛𝗔𝗠𝗜 〽ᴅ ⚡]"}
 > 𝙷𝚎𝚕𝚕𝚘 𝚃𝚑𝚎𝚛𝚎 *${pushname}*
 > [ T W I T T E R  D L ]
 > =======================
@@ -46,7 +46,7 @@ ${config.BOTNAME || "> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}
   },
   DIRECT: function(pushname,fileName,fileSize,fileType){
     return `
-"> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]
+"> [⚡ 𝗖𝗛𝗔𝗠𝗜 〽ᴅ ⚡]
 > 𝙷𝚎𝚕𝚕𝚘 𝚃𝚑𝚎𝚛𝚎 *${pushname}*      
 > [ D I R E C T  D L ]
 > =======================        
@@ -57,7 +57,7 @@ ${config.BOTNAME || "> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}
   },
   MEDIAFIRE: function(pushname,data,fileSize){
     return `
-> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]
+> [⚡ 𝗖𝗛𝗔𝗠𝗜 〽ᴅ ⚡]
 > 𝙷𝚎𝚕𝚕𝚘 𝚃𝚑𝚎𝚛𝚎 *${pushname}*
 > [ M E D I A F I R A ]
 > ======================
@@ -67,7 +67,7 @@ ${config.BOTNAME || "> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}
   },
   APK: function(pushname,data,correctsize) {
     return `
-> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]
+> [⚡ 𝗖𝗛𝗔𝗠𝗜 〽ᴅ ⚡]
 > 𝙷𝚎𝚕𝚕𝚘 𝚃𝚑𝚎𝚛𝚎 *${pushname}*
 > [ A P K  D L ]
 > =======================
@@ -80,7 +80,7 @@ ${config.BOTNAME || "> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}
   },
   SPOTIFY: function(pushname,item) {
     return `
-${config.BOTNAME || "> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}
+${config.BOTNAME || "> [⚡ 𝗖𝗛𝗔𝗠𝗜 〽ᴅ ⚡]"}
 > 𝙷𝚎𝚕𝚕𝚘 𝚃𝚑𝚎𝚛𝚎 *${pushname}*
 > [ S P O T I F Y  D L ]
 > =====================
@@ -94,10 +94,10 @@ ${config.BOTNAME || "> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}
   //=================main==================================
   IMG: "https://i.ibb.co/VWy8DK06/Whats-App-Image-2025-12-09-at-17-38-33-fd4d4ecd.jpg",
   ALIVEVOICE: "./src/media/Auto_voice/alive.aac",
-  MOVIETITLE: "> *『⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 𝑪𝑰𝑵𝑬𝑴𝑨 』*",
+  MOVIETITLE: "> *『⚡ 𝗖𝗛𝗔𝗠𝗜 𝑪𝑰𝑵𝑬𝑴𝑨 』*",
   ALIVEMSG: function (config, pushname, runtime) {
     return `
-    > [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]
+    > [⚡ 𝗖𝗛𝗔𝗠𝗜 〽ᴅ ⚡]
     > 𝙷𝚎𝚕𝚕𝚘 𝚃𝚑𝚎𝚛𝚎 *${pushname}*
     > [  A  L  I  V  E  ]
     > =======================
@@ -116,76 +116,85 @@ ${config.BOTNAME || "> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}
     > ======================`.trim();
   },
   //====================movie======================================
-  GROUP: function (groupName, config,oce) {
+  GROUP: function (groupName, config) {
     return `
-> 📨 *𝙎𝙝𝙖𝙧𝙚𝙙 𝙄𝙣:* ${oce}${groupName}${oce}
-> 🛡️ *𝘼𝙙𝙢𝙞𝙣:* ${oce}${config.MNAME}${oce}`.trim();
+\n> 🛡️ *𝘼𝙙𝙢𝙞𝙣:* ⚡ CHAMIYA ⚡`.trim();
   },
-  SINHALASUB: function (movieData,oce) {
+  SINHALASUB: function (movieData) {
     return `
-> *『⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 𝑪𝑰𝑵𝑬𝑴𝑨 』*
-> =====================
-> 🎬 *Title:* ${oce}${movieData.title}${oce}
-> 📝 *Tagline:* ${oce}${movieData.metadata.tagline || "N/A"}${oce}
-> ⭐ *IMDb:* ${oce}${movieData.metadata.imdbRating || "N/A"}${oce}
-> 🗓️ *Year:* ${oce}${movieData.metadata.year}${oce}
-> 🌍 *Country:* ${oce}${movieData.metadata.country}${oce}
-> 🎭 *Genres:* ${oce}${movieData.metadata.genres.join(", ")}${oce}
-> ⏱️ *Duration:* ${oce}${movieData.metadata.duration}${oce}
-> 🗣️ *Language:* ${oce}${movieData.metadata.language}${oce}
-> 👨‍💻 *Subtitle By:* ${oce}${movieData.metadata.subtitleAuthor}${oce}
-> 🌐 *Subtitle Site:* ${oce}${movieData.metadata.subtitleSite}${oce}
-> =====================
-> 📌 *Description:*  
-> ${oce}_${movieData.description}_${oce}`.trim();
-  },
-  CINESUBZ: function (title, metadata, rating,tagline,genres,quality,description,oce) {
-    return `
-> *『⚡ 𝗫ＰＲＯ𝗩ＥＲＣＥ 𝑪𝑰𝑵𝑬𝑴𝑨 』*
-> =====================
-> 🎬 *Title:* ${oce}${title}${oce}
-> 📝 *Tagline:* ${oce}${tagline || "N/A"}${oce}
-> ⭐ *IMDb:* ${oce}${typeof rating === 'object' ? rating.value : rating}${oce}
-> 🗓️ *Year:* ${oce}${metadata?.year || "N/A"}${oce}
-> 🌍 *Country:* ${oce}${metadata?.country || "N/A"}${oce}
-> 🎭 *Genres:* ${oce}${genres}${oce}
-> ⏱️ *Duration:* ${oce}${metadata?.runtime || metadata?.duration || "N/A"}${oce}
-> 🗣️ *Language:* ${oce}${metadata?.language || "English"}${oce}
-> 👨‍💻 *Subtitle By:* ${oce}${metadata?.subtitleBy || "N/A"}${oce}
-> 📊 *Quality:* ${oce}${quality}${oce}
-> =====================
-> 📌 *Description:*  
-> ${oce}_${description || "No description available."}_${oce}
+    
+☘️ *𝗧ɪᴛʟᴇ : _${movieData.title}_*
 
-`.trim();
+▫️📝 *Tagline ➟* _${movieData.metadata.tagline || "N/A"}_
+▫️🥇 *𝗜ᴍᴅʙ 𝗩ᴏᴛᴇꜱ ➟* _${movieData.metadata.imdbRating || "N/A"}_
+▫️📅 *𝗥ᴇʟᴇᴀꜱᴇ 𝗬ᴇᴀʀ ➟* _${movieData.metadata.year}_
+▫️🌎 *𝗖ᴏᴜɴᴛʀʏ ➟* _${movieData.metadata.country}_
+▫️🎭 *𝗚ᴇɴʀᴇꜱ ➟* _${movieData.metadata.genres.join(", ")}_
+▫️⏳ *𝗗ᴜʀᴀᴛɪᴏɴ ➟* _${movieData.metadata.duration}_
+▫️🔠 *𝗟ᴀɴɢᴜᴀɢᴇ ➟* _${movieData.metadata.language}_
+▫️👨‍💻 *𝗦ᴜʙᴛɪᴛʟᴇ 𝗕ʏ ➟* _${movieData.metadata.subtitleAuthor}_
+▫️🌐 *𝗦ᴜʙᴛɪᴛʟᴇ 𝗦ɪᴛᴇ ➟* _${movieData.metadata.subtitleSite}_
+
+*➟➟➟➟➟➟➟➟➟➟➟➟➟➟➟*
+
+*𝙹𝙾𝙸𝙽 𝚄𝚂 ➟* https://whatsapp.com/channel/0029VbBG8i6C6ZvZQZN9TB0j/107
+
+*➟➟➟➟➟➟➟➟➟➟➟➟➟➟➟*
+
+▫️📌 *𝗗ᴇꜱᴄʀɪᴘᴛɪᴏɴ ➟*  
+_${movieData.description}_`.trim();
   },
-  CINETVSHOW: function (episodeInfo,quality,oce) {
+  CINESUBZ: function (title, metadata, rating,tagline,genres,quality,description) {
     return `
-> *『⚡ 𝗫ＰＲＯ𝗩ＥＲＣＥ 𝑪𝑰𝑵𝑬𝑴𝑨 』*
-> =====================
-> 📺 *Series:* ${oce}${episodeInfo.series || "N/A"}${oce}
-> 🎬 *Episode:* ${oce}${episodeInfo.seasonEpisode || "N/A"}${oce}
-> 🏷️ *Title:* ${oce}${episodeInfo.episodeTitle || "N/A"}${oce}
-> 📅 *Date:* ${oce}${episodeInfo.date || "N/A"}${oce}
-> ⭐ *Rating:* ${oce}${episodeInfo.rating?.value || "N/A"}/10${oce}
-> 📊 *Quality:* ${oce}${quality || "480p"}${oce}
-> =====================
-> 📌 *Episode Info:*
-> ${oce}_${episodeInfo.title || "No additional information available."}_${oce}`.trim();
+    
+☘️ *𝗧ɪᴛʟᴇ : _${title}_*
+
+▫️📝 *Tagline ➟* _${tagline || "N/A"}_
+▫️🥇 *𝗜ᴍᴅʙ 𝗩ᴏᴛᴇꜱ ➟* _${typeof rating === 'object' ? rating.value : rating}_
+▫️📅 *𝗥ᴇʟᴇᴀꜱᴇ 𝗬ᴇᴀʀ ➟* _${metadata?.year || "N/A"}_
+▫️🌎 *𝗖ᴏᴜɴᴛʀʏ ➟* _${metadata?.country || "N/A"}_
+▫️🎭 *𝗚ᴇɴʀᴇꜱ ➟* _${genres}_
+▫️⏳ *𝗗ᴜʀᴀᴛɪᴏɴ ➟* _${metadata?.runtime || metadata?.duration || "N/A"}_
+▫️🔠 *𝗟ᴀɴɢᴜᴀɢᴇ ➟* _${metadata?.language || "English"}_
+▫️👨‍💻 *𝗦ᴜʙᴛɪᴛʟᴇ 𝗕ʏ ➟* _${metadata?.subtitleBy || "N/A"}_
+▫️📊 *𝗤ᴜᴀʟɪᴛʏ ➟* _${quality}_
+
+*➟➟➟➟➟➟➟➟➟➟➟➟➟➟➟*
+
+*𝙹𝙾𝙸𝙽 𝚄𝚂 ➟* https://whatsapp.com/channel/0029VbBG8i6C6ZvZQZN9TB0j/107
+
+*➟➟➟➟➟➟➟➟➟➟➟➟➟➟➟*
+
+▫️📌 *𝗗ᴇꜱᴄʀɪᴘᴛɪᴏɴ ➟*  
+ _${description || "No description available."}_`.trim();
   },
-  CINETVSHOWALLDL: function (seriesTitle,rating,metadata,genres,movieData,oce) {
+  CINETVSHOW: function (episodeInfo,quality) {
     return `
-> *『⚡ 𝗫ＰＲＯ𝗩ＥＲＣＥ 𝑪𝑰𝑵𝑬𝑴𝑨 』*
-> =====================
-> 🎬 *Series:* ${oce}${seriesTitle}${oce}
-> ⭐ *IMDb:* ${oce}${rating}${oce}
-> 🗓️ *Year:* ${oce}${metadata.year || "N/A"}${oce}
-> 🎭 *Genres:* ${oce}${genres}${oce}
-> 📊 *Seasons:* ${oce}${movieData.seasons.length}${oce}
-> 🌐 *Language:* ${oce}${metadata.language || "English"}${oce}
-> =====================
-> 📌 *Series Description:*  
-> ${oce}_${movieData.description || "No description available."}_${oce}`.trim();
+*『 𝙿𝙸𝙽𝙺 𝙻𝙾𝚃𝚄𝚂 𝙲𝙸𝙽𝙴𝙼𝙰 』*
+=====================
+📺 *Series:* ${episodeInfo.series || "N/A"}
+🎬 *Episode:* ${episodeInfo.seasonEpisode || "N/A"}
+🏷️ *Title:* ${episodeInfo.episodeTitle || "N/A"}
+📅 *Date:* ${episodeInfo.date || "N/A"}
+⭐ *Rating:* ${episodeInfo.rating?.value || "N/A"}/10
+📊 *Quality:* ${quality || "480p"}
+=====================
+📌 *Episode Info:*
+_${episodeInfo.title || "No additional information available."}_`.trim();
+  },
+  CINETVSHOWALLDL: function (seriesTitle,rating,metadata,genres,movieData) {
+    return `
+*『⚡ 𝙿𝙸𝙽𝙺 𝙻𝙾𝚃𝚄𝚂 𝙲𝙸𝙽𝙴𝙼𝙰 』*
+=====================
+🎬 *Series:* ${seriesTitle}
+⭐ *IMDb:* ${rating}
+🗓️ *Year:* ${metadata.year || "N/A"}
+🎭 *Genres:* ${genres}
+📊 *Seasons:* ${movieData.seasons.length}
+🌐 *Language:* ${metadata.language || "English"}
+=====================
+📌 *Series Description:*  
+_${movieData.description || "No description available."}_`.trim();
   },
   //=====================youtube===========================================
   SONG: function (data,pushname,oce) {

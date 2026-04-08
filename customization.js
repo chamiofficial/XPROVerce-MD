@@ -117,8 +117,7 @@ ${config.BOTNAME || "> [⚡ 𝗖𝗛𝗔𝗠𝗜 〽ᴅ ⚡]"}
   },
   //====================movie======================================
   GROUP: function (groupName, config) {
-    return `
-\n> 🛡️ *𝘼𝙙𝙢𝙞𝙣:* ⚡ CHAMIYA ⚡`.trim();
+    return ``.trim();
   },
   SINHALASUB: function (movieData) {
     return `
@@ -137,14 +136,13 @@ ${config.BOTNAME || "> [⚡ 𝗖𝗛𝗔𝗠𝗜 〽ᴅ ⚡]"}
 
 *➟➟➟➟➟➟➟➟➟➟➟➟➟➟➟*
 
-*𝙹𝙾𝙸𝙽 𝚄𝚂 ➟* https://whatsapp.com/channel/0029VbBG8i6C6ZvZQZN9TB0j/107
+*𝙹𝙾𝙸𝙽 𝚄𝚂 ➟* https://whatsapp.com/channel/0029VbBG8i6C6ZvZQZN9TB0j/114
 
 *➟➟➟➟➟➟➟➟➟➟➟➟➟➟➟*
 
-▫️📌 *𝗗ᴇꜱᴄʀɪᴘᴛɪᴏɴ ➟*  
-_${movieData.description}_`.trim();
+`.trim();
   },
-  CINESUBZ: function (title, metadata, rating,tagline,genres,quality,description) {
+  CINESUBZ: function (title, metadata, rating,tagline,genres,quality) {
     return `
     
 ☘️ *𝗧ɪᴛʟᴇ : _${title}_*
@@ -161,40 +159,38 @@ _${movieData.description}_`.trim();
 
 *➟➟➟➟➟➟➟➟➟➟➟➟➟➟➟*
 
-*𝙹𝙾𝙸𝙽 𝚄𝚂 ➟* https://whatsapp.com/channel/0029VbBG8i6C6ZvZQZN9TB0j/107
+*𝙹𝙾𝙸𝙽 𝚄𝚂 ➟* https://whatsapp.com/channel/0029VbBG8i6C6ZvZQZN9TB0j/114
 
 *➟➟➟➟➟➟➟➟➟➟➟➟➟➟➟*
-
-▫️📌 *𝗗ᴇꜱᴄʀɪᴘᴛɪᴏɴ ➟*  
- _${description || "No description available."}_`.trim();
+`.trim();
   },
   CINETVSHOW: function (episodeInfo,quality) {
     return `
-*『 𝙿𝙸𝙽𝙺 𝙻𝙾𝚃𝚄𝚂 𝙲𝙸𝙽𝙴𝙼𝙰 』*
+📺 *𝙿𝙸𝙽𝙺 𝙻𝙾𝚃𝚄𝚂 𝚃𝚅 𝚂𝙷𝙾𝚆* 📺
+
 =====================
-📺 *Series:* ${episodeInfo.series || "N/A"}
-🎬 *Episode:* ${episodeInfo.seasonEpisode || "N/A"}
-🏷️ *Title:* ${episodeInfo.episodeTitle || "N/A"}
-📅 *Date:* ${episodeInfo.date || "N/A"}
-⭐ *Rating:* ${episodeInfo.rating?.value || "N/A"}/10
-📊 *Quality:* ${quality || "480p"}
+📺 *𝗦eries:* ${episodeInfo.series || "N/A"}
+🎬 *𝗘pisode:* ${episodeInfo.seasonEpisode || "N/A"}
+🏷️ *𝗧itle:* ${episodeInfo.episodeTitle || "N/A"}
+📅 *𝗗ate:* ${episodeInfo.date || "N/A"}
+⭐ *𝗥ating:* ${episodeInfo.rating?.value || "N/A"}/10
+📊 *𝗤uality:* ${quality || "480p"}
 =====================
-📌 *Episode Info:*
-_${episodeInfo.title || "No additional information available."}_`.trim();
+`.trim();
   },
   CINETVSHOWALLDL: function (seriesTitle,rating,metadata,genres,movieData) {
     return `
-*『⚡ 𝙿𝙸𝙽𝙺 𝙻𝙾𝚃𝚄𝚂 𝙲𝙸𝙽𝙴𝙼𝙰 』*
+📺 *𝙿𝙸𝙽𝙺 𝙻𝙾𝚃𝚄𝚂 𝚃𝚅 𝚂𝙷𝙾𝚆* 📺
+
 =====================
-🎬 *Series:* ${seriesTitle}
-⭐ *IMDb:* ${rating}
-🗓️ *Year:* ${metadata.year || "N/A"}
-🎭 *Genres:* ${genres}
-📊 *Seasons:* ${movieData.seasons.length}
-🌐 *Language:* ${metadata.language || "English"}
-=====================
-📌 *Series Description:*  
-_${movieData.description || "No description available."}_`.trim();
+
+🎬 *𝗦ᴇʀɪᴇꜱ:* ${seriesTitle}
+⭐ *𝗜ᴍᴅʙ:* ${rating}
+🗓️ *𝗬ᴇᴀʀ:* ${metadata.year || "N/A"}
+🎭 *𝗚ᴇɴʀᴇꜱ:* ${genres}
+📊 *𝗦ᴇᴀꜱᴏɴꜱ:* ${movieData.seasons.length}
+🌐 *𝗟ᴀɴɢᴜᴀɢᴇ:* ${metadata.language || "English"}
+`.trim();
   },
   //=====================youtube===========================================
   SONG: function (data,pushname,oce) {
